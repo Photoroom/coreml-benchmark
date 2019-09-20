@@ -12,6 +12,9 @@
 		F1E1D63D2334CB910067DAFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D63B2334CB910067DAFC /* Main.storyboard */; };
 		F1E1D63F2334CB930067DAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D63E2334CB930067DAFC /* Assets.xcassets */; };
 		F1E1D6422334CB930067DAFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D6402334CB930067DAFC /* LaunchScreen.storyboard */; };
+		F1E1D65223355AFE0067DAFC /* DeepLab.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */; };
+		F1E1D65323355AFE0067DAFC /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */; };
+		F1E1D65423355AFE0067DAFC /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E1D65123355AFE0067DAFC /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F1E1D63E2334CB930067DAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E1D6412334CB930067DAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E1D6432334CB930067DAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLab.mlmodel; sourceTree = "<group>"; };
+		F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		F1E1D65123355AFE0067DAFC /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				F1E1D63E2334CB930067DAFC /* Assets.xcassets */,
 				F1E1D6402334CB930067DAFC /* LaunchScreen.storyboard */,
 				F1E1D6432334CB930067DAFC /* Info.plist */,
+				F1E1D65123355AFE0067DAFC /* cat.jpg */,
+				F1E1D64F23355AFE0067DAFC /* DeepLab.mlmodel */,
+				F1E1D65023355AFE0067DAFC /* UIImage+CVPixelBuffer.swift */,
 			);
 			path = benchmark;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			files = (
 				F1E1D6422334CB930067DAFC /* LaunchScreen.storyboard in Resources */,
 				F1E1D63F2334CB930067DAFC /* Assets.xcassets in Resources */,
+				F1E1D65423355AFE0067DAFC /* cat.jpg in Resources */,
 				F1E1D63D2334CB910067DAFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E1D65223355AFE0067DAFC /* DeepLab.mlmodel in Sources */,
 				F1E1D63A2334CB910067DAFC /* ViewController.swift in Sources */,
 				F1E1D6362334CB910067DAFC /* AppDelegate.swift in Sources */,
+				F1E1D65323355AFE0067DAFC /* UIImage+CVPixelBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = benchmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = benchmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
